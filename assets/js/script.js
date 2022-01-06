@@ -1,15 +1,23 @@
 var apiKey = "05f629a6a4d93216a57d8401030d50a8";
-var today = moment().format("L");
 var searchHistory = [];
-var apiUrl = ""
+var cityName = cityName
+var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + "Houston" + "&appid=" + apiKey;
 
 
-fetch(apiUrl).then(function(respond) {
-    if (respond.ok) {
-        respond.json().then(function(data) {
-            displayIssues(data);
+var button = document.querySelector(".button");
+//var inputValue = document.querySelector("");
+var name = document.querySelector(".name");
+
+
+
+fetch(apiUrl).then(function(response) {
+    
+
+    if (response.ok) {
+        console.log(response);
+        response.json().then (function(data){
+            console.log(data);
         })
+       
     }
 })
-
-for (var i = 0; i <)

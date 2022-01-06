@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
 </head>
 <body>
-    <nav class="navbar">
-        <span class="navbar-brand mb-0 h1"
-          ><i class="fas fa-cloud m-1"></i>Weather Dashboard</span>
+    <nav class="header">
+        <span class="header-brand mb-0 h1"
+          ></i>Weather Dashboard</span>
       </nav>
-      <div class="row forecast-cards">
-        <div class="col-2"><div class="card-body"></div></div>
-        <div class="card col-2 border-0"><div class="card-body one"></div></div>
-        <div class="card col-2 border-0"><div class="card-body two"></div></div>
-        <div class="card col-2 border-0"><div class="card-body three"></div></div>
-        <div class="card col-2 border-0"><div class="card-body four"></div></div>
-        <div class="col-2 card border-0"><div class="card-body five"></div></div>
-      </div>
+      <div class="row">
+        <div class="col-2 bg-light">
+          <p class="search-header my-1 ml-2">Search by city</p>
+          <div class="input-group mb-2 ml-2">
+            <input id="city-input" type="text" class="form-control" placeholder="Enter city name"/>
+            <div class="input-group-append">
+              
+            </div>
+        </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block" type="button" id="search-button">Search</button>
+        </div>
+          </div>
+          <div class="input-list"></div>
+          <form id="history"></form>
+        </div>
+      
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,13 +1,12 @@
-.navbar, .one, .two, .three, .four, .five {
+.header, .one, .two, .three, .four, .five {
     background-color: navy;
     color: white;    
 }
 
 .one, .two, .three, .four, .five {
-    border-radius: 15px;
     font-size: x-small;
 }
 
-.forecast-cards {
+.five-day-forcast {
     font-size: small;
 }
