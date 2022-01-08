@@ -14,22 +14,22 @@
         <span class="header-brand mb-0 h1"
           ></i>Weather Dashboard</span>
       </nav>
-      <div class="row">
-        <div class="col-2 bg-light">
-          <p class="search-header my-1 ml-2">Search by city</p>
-          <div class="input-group mb-2 ml-2">
-            <input id="city-input" type="text" class="form-control" placeholder="Enter city name"/>
-            <div class="input-group-append">
-              
-            </div>
+        <div class="row">
+            <main class="flex-row justify-space-between">
+                <div class="col-12 col-md-4"></div>
+                <div class="card">
+                    <h3 class="card-header">Search By City</h3>
+                    <form id="user-form" class="card-body">
+                      <input name="city" id="city-name" type="text" autofocus="true" class="form-input" placeholder="Enter City Name"/>
+                      <button type="submit" class="btn tn-primary btn-lg btn-block">Search</button>
+                    </form>
+                  </div>
+                <div class="col-12 col-md-8"></div>
+              </main>
         </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block" type="button" id="search-button">Search</button>
-        </div>
-          </div>
-          <div class="input-list"></div>
-          <form id="history"></form>
-        </div>
-      
+        
+
     <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 </body>
 </html>
